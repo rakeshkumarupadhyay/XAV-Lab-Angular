@@ -1,0 +1,17 @@
+{
+  "name": "Outlook2web",
+  "version": "1.0.0",
+  "description": "Outlook2web UI grunt and plugins",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-cache-breaker": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-usemin": "*",
+    "grunt-gitinfo": "*",
+    "grunt-replace": "*"
+  }
+}

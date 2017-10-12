@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <title>Outlook2web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+	<!--vendor CSS -->
+
+	<!-- build:css assets/css/vendor.css -->
+	<link href="/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/libs/angular-growl-2/angular-growl.min.css" rel="stylesheet">
+	<link href="/assets/libs/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+	<link href="/assets/libs/pnotify/dist/pnotify.css" rel="stylesheet" type="text/css" />
+	<link href="/assets/libs/pnotify/dist/pnotify.buttons.css" rel="stylesheet" type="text/css" />
+	<link href="/assets/libs/angular-pane/pane.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libs/angular-scroll/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="/assets/libs/jstree/style.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/angular-datepicker.css" />
+    <link href="/assets/libs/summernote/summernote.css" rel="stylesheet">
+    <!-- endbuild -->
+
+	<!--app CSS -->
+	<!-- build:css assets/css/app.css -->
+	<link href="/assets/css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/skins/skin-green.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/AdminLTE.min.css">
+	<!-- endbuild -->
+
+	<!--Vendor Scripts-->
+	<!-- build:js app/vendor.js -->
+    <script src="/assets/libs/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="/assets/libs/jQueryUI/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+    <script src="/assets/libs/underscore.js" type="text/javascript"></script>
+	<script src="/assets/libs/angular/angular-1.5.8.min.js" type="text/javascript"></script>
+    <script src="/assets/libs/angular-ui-bootstrap/angular-animate.js" type="text/javascript"></script>
+
+    <script src="/assets/libs/angular-ui-bootstrap/ui-bootstrap-tpls-2.1.2.min.js" type="text/javascript"></script>
+    <script src="/assets/libs/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/assets/libs/angular/angular-sanitize.min.js" type="text/javascript"></script>
+
+    <script src="/assets/libs/angular-cookies/angular-cookies.min.js" type="text/javascript"></script>
+    <script src="/assets/libs/angular-ui-router/angular-ui-router.min.js" type="text/javascript"></script>
+
+    <script src="/assets/js/theme.modified.js" type="text/javascript"></script>
+      <script src="/assets/js/ng-text-truncate.js" type="text/javascript"></script>
+	<script src="/assets/libs/pnotify/dist/pnotify.js" type="text/javascript"></script>
+	<script src="/assets/libs/pnotify/dist/pnotify.buttons.js" type="text/javascript"></script>
+	<script src="/assets/libs/angular-pnotify/angular-pnotify.js" type="text/javascript"></script>
+    <script src="/assets/libs/angular-pane/pane.js" type="text/javascript"></script>
+    <script src="/assets/libs/jstree/jstree.min.js" type="text/javascript"></script>
+    <script src="/assets/libs/jstree/ngJsTree.js" type="text/javascript"></script>
+    <script src="assets/libs/angular-scroll/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script src="/assets/libs/angular-growl-2/angular-growl.min.js"></script>
+    <script src="/assets/libs/dirPagination.js"></script>
+    <script src="/assets/libs/angular-base64/angular-base64.js"></script>
+    <script src="/assets/libs/angular-pubsub.js"></script>
+    <script src="/assets/libs/angular-paging/paging.min.js"></script>
+
+    <script src="/assets/libs/summernote/summernote.min.js"></script>   
+    <script src="/assets/libs/to-markdown.min.js"></script>
+
+    <!-- endbuild -->
+
+	<!--app Scripts-->
+    <!-- build:js app/application.js -->
+	<script src="/app/app.js" type="text/javascript"></script>
+    <script src="/app/app.config.js" type="text/javascript"></script>
+    <script src="/app/app.routes.js" type="text/javascript"></script>
+    <script src="/app/app.controller.js" type="text/javascript"></script>
+	<!-- Services -->
+    <script src="/app/services/authService.js" type="text/javascript"></script>
+    <script src="/app/services/httpService.js" type="text/javascript"></script>
+    <script src="/app/services/sessionService.js" type="text/javascript"></script>
+    <script src="/app/services/directives.js" type="text/javascript"></script>
+    <script src="/app/services/filterService.js" type="text/javascript"></script>
+    <script src="/app/shared/confirmBox/modalConfirmService.js"></script>
+    <!-- Controllers -->
+    <script src="/app/users/userCtrls.js" type="text/javascript"></script>
+    <script src="/app/nodes/projectsCtrl.js" type="text/javascript"></script>
+    <script src="/assets/js/angular-datepicker.js" type="text/javascript"></script>
+    <script src="/assets/libs/moment/moment.min.js" type="text/javascript"></script>
+    <script src="/assets/libs/scrollForData/scrollForData.js" type="text/javascript"></script>
+    <script src="/app/nodes/projectsCtrl.js" type="text/javascript"></script>
+    <script src="/app/mydrive/myDriveCtrls.js" type="text/javascript"></script>
+    <script src="/app/search/searchCtrl.js" type="text/javascript"></script>
+    <!-- endbuild -->
+
+</head>
+
+<body class="skin-green sidebar-mini {{body_class}}" ng-controller="MainBodyCtrl">
+
+    <div ui-view></div>
+    <div growl></div>
+</body>
+
+</html>
